@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ._11a{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+        ._11b{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+        ._11c{
+            display: grid;
+            grid-template:auto auto /auto auto auto auto ;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+        ._11d{
+            display: grid;
+            grid-template-columns: 150px 150px 150px ;
+            column-gap: 20px;
+            border-color: grey;
+            
+        }
+        .setting{
+            display: grid;
+            grid-template-rows: auto 30px auto auto;
+            
+        }
+        .infom{
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="_11a">
+        <p style="background-color: lightblue;">200px</p>
+        <p style="background-color: lightpink;">75px</p>
+    </div>
+    <div class="_11b">
+        <p style="background-color: lightblue;">col1</p>
+        <p style="background-color: lightpink;">col2</p>
+        <p style="background-color: lightblue;">col3</p>
+    </div>
+    <div class="_11c">
+        <p style="background-color: lightpink;">col1</p>
+        <p style="background-color: lightpink;">col2</p>
+        <p style="background-color: lightpink;">col3</p>
+        <p style="background-color: lightpink;">col4</p>
+    
+        <p style="background-color: lightpink;">col1</p>
+        <p style="background-color: lightpink;">col2</p>
+        <p style="background-color: lightpink;">col3</p>
+        <p style="background-color: lightpink;">col4</p>
+    </div>
+
+    <div class="_11d">
+        <div class="setting">
+            <img src="cat.jpg" alt="cat.jpg" style="height:100px">
+            <p style="font-weight:bold ;">Oliver</p>
+            <div class="infom">
+                <img src="dog2.jpg" alt="dog2.jpg" style="height:30px;border-radius: 50%;width:30px;object-fit:cover;">
+                <p style="font-weight:lighter;">2 mutual friends</p>
+            </div>
+            <button style="background-color: rgb(39, 141, 224); color:white;width:100px;padding:5px 10px;border-radius: 2px;border:none">Add Friend</button>
+        </div>
+        <div class="setting">
+            <img src="cat2.jpg" alt="cat2.jpg" style="height:100px">
+            <p style="font-weight:bold ;">Mimi</p>
+            <div class="infom">
+                <img src="dog2.jpg" alt="dog2.jpg" style="height:30px;border-radius: 50%;width:30px;object-fit:cover;">
+                <p style="font-weight:lighter;">2 mutual friends</p>
+            </div>
+            <button style="background-color: rgb(39, 141, 224); color:white;width:100px;padding:5px 10px;border-radius: 2px;border:none">Add Friend</button>
+        </div>
+        <div class="setting">
+            <img src="dog.jpg" alt="dog.jpg" style="height:100px">
+            <p style="font-weight:bold ;">Rex</p>
+            <div class="infom">
+                <img src="dog2.jpg" alt="dog2.jpg" style="height:30px;border-radius: 50%;width:30px;object-fit:cover;">
+                <p style="font-weight:lighter;">2 mutual friends</p>
+            </div>
+            <button style="background-color: rgb(39, 141, 224); color:white;width:100px;padding:5px 10px;border-radius: 2px;border:none">Add Friend</button>
+        </div>
+    </div>
+</body>
+</html>
